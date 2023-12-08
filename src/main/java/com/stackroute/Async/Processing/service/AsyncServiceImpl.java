@@ -13,9 +13,9 @@ import org.springframework.stereotype.Service;
 public class AsyncServiceImpl implements AsyncService {
     @Override
     public void performAsyncTask() {
-        // Simulate a time-consuming task
+
         try {
-            Thread.sleep(5000); // Simulate a 5-second task
+            Thread.sleep(5000);
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }

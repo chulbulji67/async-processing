@@ -26,9 +26,7 @@ public class AsyncController {
     @GetMapping("/async-task")
     public String triggerAsyncTask() {
         //Call performAsyncTask() method of AsyncServiceImpl class
-
-
-
+        asyncService.performAsyncTask();
         return "Async task started.";
 
     }
